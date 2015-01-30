@@ -1,0 +1,12 @@
+#box{
+	height: 100px;
+	width: 100px;
+	background-color: blue;
+	-webkit-animation: fader 2s .5s infinite linear alternate;
+}
+
+@-webkit-keyframes fader {
+	to {
+		opacity: 0;
+	}
+}
