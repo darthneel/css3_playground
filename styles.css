@@ -8,8 +8,8 @@ body{
 	margin: 80px;
 	/*background-color: #e74c3c;*/
 	-webkit-animation: sq_to_cir 2s 0s infinite linear alternate,
-										 fader .0625s .5s infinite linear alternate,
-										 spin 2s .5s infinite linear alternate;
+		fader .0625s .5s infinite linear alternate,
+		spin 2s .5s infinite linear alternate;
 }
 
 @-webkit-keyframes fader {
