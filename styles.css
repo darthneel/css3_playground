@@ -6,9 +6,9 @@ body{
 	height: 300px;
 	width: 300px;
 	margin: 80px;
-	background-color: #e74c3c;
-	-webkit-animation: sq_to_cir 1s 0s infinite linear alternate,
-										 fader .125s .5s infinite linear alternate,
+	/*background-color: #e74c3c;*/
+	-webkit-animation: sq_to_cir 2s 0s infinite linear alternate,
+										 fader .0625s .5s infinite linear alternate,
 										 spin 2s .5s infinite linear alternate;
 }
 
@@ -20,24 +20,30 @@ body{
 
 @-webkit-keyframes spin {
 	to {
-		transform: rotate(180deg);
+		transform: rotate(360deg);
 	}
 }
 
 @-webkit-keyframes sq_to_cir {
 	0%  {
     border-radius:0 0 0 0;
+    background-color: #e74c3c;
+
   }
   25%  {
     border-radius:50% 0 0 0;
+    background-color: #f1c40f;
   }
   50%  {
+  	background-color: #e67e22;
     border-radius:50% 50% 0 0;
   }
   75%  {
     border-radius:50% 50% 50% 0;
+    background-color: #f1c40f;
   }
   100% {
+  	background-color: #e74c3c;
     border-radius:50%;
   }
 }
