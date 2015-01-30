@@ -1,12 +1,43 @@
+body{
+	background-color: #2c3e50;
+}
+
 #box{
-	height: 100px;
-	width: 100px;
-	background-color: blue;
-	-webkit-animation: fader 2s .5s infinite linear alternate;
+	height: 300px;
+	width: 300px;
+	margin: 80px;
+	background-color: #e74c3c;
+	-webkit-animation: sq_to_cir 1s 0s infinite linear alternate,
+										 fader .125s .5s infinite linear alternate,
+										 spin 2s .5s infinite linear alternate;
 }
 
 @-webkit-keyframes fader {
 	to {
 		opacity: 0;
 	}
+}
+
+@-webkit-keyframes spin {
+	to {
+		transform: rotate(180deg);
+	}
+}
+
+@-webkit-keyframes sq_to_cir {
+	0%  {
+    border-radius:0 0 0 0;
+  }
+  25%  {
+    border-radius:50% 0 0 0;
+  }
+  50%  {
+    border-radius:50% 50% 0 0;
+  }
+  75%  {
+    border-radius:50% 50% 50% 0;
+  }
+  100% {
+    border-radius:50%;
+  }
 }
