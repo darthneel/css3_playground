@@ -15,12 +15,20 @@ body{
 @-webkit-keyframes fader {
 	to {
 		opacity: 0;
+
 	}
 }
 
 @-webkit-keyframes spin {
 	to {
 		transform: rotate(360deg);
+
+	}
+}
+@-webkit-keyframes mover {
+	to {
+		transform: rotate(360deg);
+
 	}
 }
 
@@ -31,19 +39,19 @@ body{
 
   }
   25%  {
-    border-radius:50% 0 0 0;
+    border-radius:10% 10% 10% 10%;
     background-color: #f1c40f;
   }
   50%  {
   	background-color: #e67e22;
-    border-radius:50% 50% 0 0;
+    border-radius:25% 25% 25% 25%;
   }
   75%  {
-    border-radius:50% 50% 50% 0;
+    border-radius:35% 35% 35% 35%;
     background-color: #f1c40f;
   }
   100% {
   	background-color: #e74c3c;
-    border-radius:50%;
+    border-radius:50% 50% 50% 50%;
   }
 }
